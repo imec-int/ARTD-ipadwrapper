@@ -26,6 +26,10 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
         webView.loadRequest(NSURLRequest(URL: startUrl))
         
         
+        webView.scalesPageToFit = true
+        
+        
+        
         let tapRec = UITapGestureRecognizer(target: self, action:Selector("gestureHappened:"))
         let pinchRec = UIPinchGestureRecognizer(target: self, action:Selector("gestureHappened:"))
         let swipeRec = UISwipeGestureRecognizer(target: self, action:Selector("gestureHappened:"))
