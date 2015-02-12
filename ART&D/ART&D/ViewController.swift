@@ -13,7 +13,7 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
     var webView: UIWebView!
     var ticker = 0
     let startUrl = NSURL(string: "http://demomix.local:3000")!
-    let timeoutSeconds = 10
+    let timeoutSeconds = 30
 
     override func viewDidLoad() {
         super.viewDidLoad()
